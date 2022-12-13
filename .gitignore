@@ -1,1 +1,5 @@
 venv_mlops
+venv_flask
+__pycache__
+*.swp
+.idea/
