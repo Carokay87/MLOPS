@@ -16,10 +16,13 @@ def home():
 @app.route("/uploader", methods=["POST"])
 def uploader():
 	f = request.files["file"]
+	print("Received file: " + f.filename)
 	prediction: requests.Response = requests.post(server_API + "/analyse", files={"file": f})
 	
 	print(prediction.json()["genre"])
-	return prediction.json()["genre"]
+	result = prediction.json()["genre"]
+	print(result)
+	return render_template("result.html", result=result)
 
 
 if __name__ == "__main__":
