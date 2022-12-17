@@ -3,3 +3,10 @@ venv_flask
 __pycache__
 *.swp
 .idea/
+data/
+TP_quantization/
+*.zip
+TP_kafka/
+data_mfcc.json
+houses.csv
+*.joblib
