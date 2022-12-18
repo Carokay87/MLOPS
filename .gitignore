@@ -10,3 +10,4 @@ TP_kafka/
 data_mfcc.json
 houses.csv
 *.joblib
+.vscode/
